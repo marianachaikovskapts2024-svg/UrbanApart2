@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanApart — Нерухомість по всій Україні</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO (шапка — частина hero, не окрема плашка) -->
+    <section class="hero" id="home">
+      <nav class="hero-nav" aria-label="Головна навігація">
+        <a href="#" class="nav-logo">
+          <img
+            class="nav-logo-img"
+            src="assets/logo.svg"
+            alt="UrbanApart"
+            width="152"
+            height="42"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#buy">Купити</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#steps">Орендувати</a></li>
+          <li><a href="#cta">Для власників</a></li>
+          <li><a href="#cases">Кейси</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+        </ul>
+        <a href="#footer" class="btn-nav-contact">Зворотній зв'язок</a>
+        <button
+          type="button"
+          class="nav-hamburger"
+          id="nav-hamburger"
+          aria-expanded="false"
+          aria-controls="nav-drawer"
+          aria-label="Відкрити меню навігації"
+        >
+          <span class="nav-hamburger__bar" aria-hidden="true"></span>
+          <span class="nav-hamburger__bar" aria-hidden="true"></span>
+          <span class="nav-hamburger__bar" aria-hidden="true"></span>
+        </button>
+      </nav>
+      <div
+        class="nav-drawer-backdrop"
+        id="nav-drawer-backdrop"
+        hidden
+        aria-hidden="true"
+      ></div>
+      <aside
+        class="nav-drawer"
+        id="nav-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="nav-drawer-title"
+        hidden
+      >
+        <div class="nav-drawer__head">
+          <span class="nav-drawer__title" id="nav-drawer-title">Меню</span>
+          <button
+            type="button"
+            class="nav-drawer__close"
+            id="nav-drawer-close"
+            aria-label="Закрити меню"
+          >
+            ×
+          </button>
+        </div>
+        <nav class="nav-drawer__nav" aria-label="Навігація по сайту">
+          <ul class="nav-drawer__links">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#buy">Купити</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#steps">Орендувати</a></li>
+            <li><a href="#cta">Для власників</a></li>
+            <li><a href="#cases">Кейси</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+          </ul>
+        </nav>
+        <a href="#footer" class="btn-nav-contact btn-nav-contact--drawer"
+          >Зворотній зв'язок</a
+        >
+      </aside>
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-title-block">
+          <div class="hero-title-blur" aria-hidden="true"></div>
+          <h1>UrbanApart</h1>
+        </div>
+        <div class="hero-lead-block">
+          <div class="hero-lead-blur" aria-hidden="true"></div>
+          <p class="hero-lead">
+            Ваш надійний партнер у світі нерухомості.<br />Професійний супровід
+            угод по всій Україні.
+          </p>
+        </div>
+        <a href="#footer" class="btn-cta-hero" data-open-feedback-modal>
+          Залишити заявку
+          <span class="hero-cta-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Кнопка «Купити» між hero і блоком оголошень -->
+    <div class="buy-bridge reveal">
+      <a href="#buy" class="btn-buy-main">Купити</a>
+    </div>
+
+    <!-- BUY / PROPERTIES -->
+    <section class="properties" id="buy">
+      <div id="cases" class="nav-anchor" aria-hidden="true"></div>
+
+      <div class="buy">
+        <button
+          type="button"
+          class="property-carousel__arrow property-carousel__arrow--prev"
+          aria-label="Попереднє оголошення"
+        >
+          ‹
+        </button>
+        <div class="property-carousel__viewport">
+          <div class="property-list">
+            <!-- Card 1 -->
+            <article class="property-card reveal">
+              <div class="property-img-wrap">
+                <img
+                  class="property-img"
+                  src="assets/first.png"
+                  alt="ЖК Паркова Алея"
+                />
+              </div>
+              <div class="property-body">
+                <p class="property-tag">НОВОБУДОВА - ЦЕНТР</p>
+                <h3 class="property-name">ЖК «Паркова Алея»</h3>
+                <p class="property-price">від 1 850 000 грн</p>
+                <div class="property-row">
+                  <div class="property-meta">
+                    <span>87 м²</span>
+                    <span>3 кімн.</span>
+                  </div>
+                  <button type="button" class="btn-property">Купити</button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 2 -->
+            <article class="property-card reveal">
+              <div class="property-img-wrap">
+                <img
+                  class="property-img"
+                  src="assets/second.png"
+                  alt="ЖК Парус"
+                />
+              </div>
+              <div class="property-body">
+                <p class="property-tag">НОВОБУДОВА - ЦЕНТР</p>
+                <h3 class="property-name">ЖК «Парус»</h3>
+                <p class="property-price">від 2 200 000 грн</p>
+                <div class="property-row">
+                  <div class="property-meta">
+                    <span>62 м²</span>
+                    <span>2 кімн.</span>
+                  </div>
+                  <button type="button" class="btn-property">Купити</button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="property-card reveal">
+              <div class="property-img-wrap">
+                <img
+                  class="property-img"
+                  src="assets/third.png"
+                  alt="ЖК Смарагд"
+                />
+              </div>
+              <div class="property-body">
+                <p class="property-tag">НОВОБУДОВА - ЦЕНТР</p>
+                <h3 class="property-name">ЖК «Смарагд»</h3>
+                <p class="property-price">від 1 600 000 грн</p>
+                <div class="property-row">
+                  <div class="property-meta">
+                    <span>42 м²</span>
+                    <span>1 кімн.</span>
+                  </div>
+                  <button type="button" class="btn-property">Купити</button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 4 -->
+            <article class="property-card reveal">
+              <div class="property-img-wrap">
+                <img
+                  class="property-img"
+                  src="assets/fourth.png"
+                  alt="ЖК Першотравневий"
+                />
+              </div>
+              <div class="property-body">
+                <p class="property-tag">НОВОБУДОВА - ЦЕНТР</p>
+                <h3 class="property-name">ЖК «Першотравневий»</h3>
+                <p class="property-price">від 1 400 000 грн</p>
+                <div class="property-row">
+                  <div class="property-meta">
+                    <span>38 м²</span>
+                    <span>1 кімн.</span>
+                  </div>
+                  <button type="button" class="btn-property">Купити</button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 5 -->
+            <article class="property-card reveal">
+              <div class="property-img-wrap">
+                <img
+                  class="property-img"
+                  src="assets/five.png"
+                  alt="ЖК Чайка"
+                />
+              </div>
+              <div class="property-body">
+                <p class="property-tag">НОВОБУДОВА - ЦЕНТР</p>
+                <h3 class="property-name">ЖК «Чайка»</h3>
+                <p class="property-price">від 1 920 000 грн</p>
+                <div class="property-row">
+                  <div class="property-meta">
+                    <span>55 м²</span>
+                    <span>2 кімн.</span>
+                  </div>
+                  <button type="button" class="btn-property">Купити</button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 6 -->
+            <article class="property-card reveal">
+              <div class="property-img-wrap">
+                <img
+                  class="property-img"
+                  src="assets/six.png"
+                  alt="ЖК Золотий дім"
+                />
+              </div>
+              <div class="property-body">
+                <p class="property-tag">НОВОБУДОВА - ЦЕНТР</p>
+                <h3 class="property-name">ЖК «Золотий дім»</h3>
+                <p class="property-price">від 2 400 000 грн</p>
+                <div class="property-row">
+                  <div class="property-meta">
+                    <span>78 м²</span>
+                    <span>3 кімн.</span>
+                  </div>
+                  <button type="button" class="btn-property">Купити</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="property-carousel__arrow property-carousel__arrow--next"
+          aria-label="Наступне оголошення"
+        >
+          ›
+        </button>
+      </div>
+
+      <div class="center-btn reveal">
+        <button type="button" class="btn-footer-cta" data-open-feedback-modal>
+          <span>Залишити заявку</span>
+          <span class="btn-footer-cta-icon" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section
+      class="services-section"
+      id="services"
+      aria-labelledby="services-heading"
+    >
+      <div class="services-inner">
+        <h2 class="services-heading reveal" id="services-heading">
+          Наші послуги
+        </h2>
+        <div class="services-row">
+          <article class="services-card reveal">
+            <div class="services-card-icon" aria-hidden="true">
+              <svg
+                class="services-card-svg"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 18L20 10L32 18V32H8V18Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 32V22H26V32"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="28"
+                  cy="12"
+                  r="6"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M30.5 14.5L33 17"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="services-card-title">Купівля нерухомості</h3>
+            <p class="services-card-text">
+              Підберемо квартиру або будинок за вашими критеріями
+            </p>
+            <a
+              class="services-card-link"
+              href="#footer"
+              data-open-feedback-modal
+              >Детальніше <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="services-card reveal">
+            <div class="services-card-icon" aria-hidden="true">
+              <svg
+                class="services-card-svg"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 32V14L20 8L30 14V32"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 32V22H24V32"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M13 18H27"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M13 22H27"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="services-card-title">Оренда квартир</h3>
+            <p class="services-card-text">
+              Актуальна база орендних пропозицій по всій Україні
+            </p>
+            <a
+              class="services-card-link"
+              href="#footer"
+              data-open-feedback-modal
+              >Детальніше <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="services-card reveal">
+            <div class="services-card-icon" aria-hidden="true">
+              <svg
+                class="services-card-svg"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 9v3M20 28v3M15.5 14.5c0-2 1.8-3.5 4.5-3.5s4.5 1.5 4.5 3.5-1.8 3.5-4.5 3.5h-3c-2.7 0-4.5 1.5-4.5 3.5s1.8 3.5 4.5 3.5 4.5-1.5 4.5-3.5"
+                  stroke="currentColor"
+                  stroke-width="1.85"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="services-card-title">Оцінка вартості</h3>
+            <p class="services-card-text">
+              Реальна ринкова оцінка без завищень
+            </p>
+            <a
+              class="services-card-link"
+              href="#footer"
+              data-open-feedback-modal
+              >Детальніше <span aria-hidden="true">→</span></a
+            >
+          </article>
+          <article class="services-card reveal">
+            <div class="services-card-icon" aria-hidden="true">
+              <svg
+                class="services-card-svg"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 10H28V30H12V10Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+                <path d="M12 14H28" stroke="currentColor" stroke-width="1.6" />
+                <path
+                  d="M16 22h8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M16 26h5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M23 25l3 3 6-7"
+                  stroke="currentColor"
+                  stroke-width="1.85"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="services-card-title">Юридичний супровід</h3>
+            <p class="services-card-text">
+              Перевірка документів і підготовка до угоди
+            </p>
+            <a
+              class="services-card-link"
+              href="#footer"
+              data-open-feedback-modal
+              >Детальніше <span aria-hidden="true">→</span></a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="steps-section" id="steps">
+      <video
+        class="steps-bg-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      >
+        <source
+          src="assets/video/11986205-uhd_3840_2160_30fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="steps-inner steps-card reveal">
+        <div class="steps-left">
+          <h2 class="steps-heading">
+            За ці <strong>7</strong> кроків, ми допоможемо обрати вашу квартиру
+          </h2>
+          <a href="#footer" class="btn-cta-hero" data-open-feedback-modal>
+            Залишити заявку
+            <span class="hero-cta-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <ol class="steps-list">
+          <li class="step-item">
+            <span class="step-badge">Крок 1</span>
+            <span class="step-text">Залишаєте заявку</span>
+          </li>
+          <li class="step-item">
+            <span class="step-badge">Крок 2</span>
+            <span class="step-text">Перша зустріч</span>
+          </li>
+          <li class="step-item">
+            <span class="step-badge">Крок 3</span>
+            <span class="step-text">Формуємо ринкову ціну</span>
+          </li>
+          <li class="step-item">
+            <span class="step-badge">Крок 4</span>
+            <span class="step-text">Рекламна кампанія</span>
+          </li>
+          <li class="step-item">
+            <span class="step-badge">Крок 5</span>
+            <span class="step-text">Покази та переговори</span>
+          </li>
+          <li class="step-item">
+            <span class="step-badge">Крок 6</span>
+            <span class="step-text">Підготовка документів</span>
+          </li>
+          <li class="step-item">
+            <span class="step-badge">Крок 7</span>
+            <span class="step-text">Угода у нотаріуса</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TRUST / REVIEWS -->
+    <section class="trust-section" id="reviews">
+      <div class="trust-inner">
+        <h2 class="section-title reveal">
+          Ми знаємо, як зробити угоду<br />вигідною, швидкою і безпечною
+        </h2>
+
+        <div class="reviews-marquee reveal" aria-label="Відгуки клієнтів">
+          <div class="reviews-marquee__viewport">
+            <div class="reviews-marquee__track">
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="review-avatar">Б</div>
+                  <div class="review-name">Богдана Сончук</div>
+                </div>
+                <div class="review-rating-row">
+                  <div class="stars">★★★★★</div>
+                  <span class="review-time">3 місяці тому</span>
+                </div>
+                <p class="review-text">
+                  Хочу подякувати Агент за допомогу в оренді квартири! Вона дуже
+                  уважна, відповідальна та привітна в спілкуванні. Мій
+                  організаційний процес, без зайвих клопотів, завдячую цьому
+                  агенту. Знайшли й не знайдете кращого жила і залишитесь дуже
+                  задоволені! Рекомендую всім, хто хоче простий і безпечний
+                  пошук квартири.
+                </p>
+              </article>
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="review-avatar review-avatar--muted">D</div>
+                  <div class="review-name">Denu Nefedenko</div>
+                </div>
+                <div class="review-rating-row">
+                  <div class="stars">★★★★★</div>
+                  <span class="review-time">рік тому</span>
+                </div>
+                <p class="review-text">
+                  Дуже вдячний компанії UrbanApart! Чесно, якісно, профі. Одразу
+                  чую виділи нашу квартиру для перегляду — дуже вдало! Оцінка
+                  відповідає ринку! Організували показ якісно і з максимальним
+                  професіоналізмом. Рекомендую для співпраці!
+                </p>
+              </article>
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="review-avatar review-avatar--accent">М</div>
+                  <div class="review-name">Михайло</div>
+                </div>
+                <div class="review-rating-row">
+                  <div class="stars">★★★★★</div>
+                  <span class="review-time">рік тому</span>
+                </div>
+                <p class="review-text">
+                  Весь процес підбору і супроводу оренди квартири був на
+                  найвищому рівні! Скрізь чули виділи нашу квартиру для
+                  перегляду. Організація показів агента команди Михайла — все
+                  чітко, профільно і максимальне попадіння в критерій пошуку!
+                  Дякуємо!
+                </p>
+              </article>
+              <article class="review-card" aria-hidden="true" tabindex="-1">
+                <div class="review-header">
+                  <div class="review-avatar">Б</div>
+                  <div class="review-name">Богдана Сончук</div>
+                </div>
+                <div class="review-rating-row">
+                  <div class="stars">★★★★★</div>
+                  <span class="review-time">3 місяці тому</span>
+                </div>
+                <p class="review-text">
+                  Хочу подякувати Агент за допомогу в оренді квартири! Вона дуже
+                  уважна, відповідальна та привітна в спілкуванні. Мій
+                  організаційний процес, без зайвих клопотів, завдячую цьому
+                  агенту. Знайшли й не знайдете кращого жила і залишитесь дуже
+                  задоволені! Рекомендую всім, хто хоче простий і безпечний
+                  пошук квартири.
+                </p>
+              </article>
+              <article class="review-card" aria-hidden="true" tabindex="-1">
+                <div class="review-header">
+                  <div class="review-avatar review-avatar--muted">D</div>
+                  <div class="review-name">Denu Nefedenko</div>
+                </div>
+                <div class="review-rating-row">
+                  <div class="stars">★★★★★</div>
+                  <span class="review-time">рік тому</span>
+                </div>
+                <p class="review-text">
+                  Дуже вдячний компанії UrbanApart! Чесно, якісно, профі. Одразу
+                  чую виділи нашу квартиру для перегляду — дуже вдало! Оцінка
+                  відповідає ринку! Організували показ якісно і з максимальним
+                  професіоналізмом. Рекомендую для співпраці!
+                </p>
+              </article>
+              <article class="review-card" aria-hidden="true" tabindex="-1">
+                <div class="review-header">
+                  <div class="review-avatar review-avatar--accent">М</div>
+                  <div class="review-name">Михайло</div>
+                </div>
+                <div class="review-rating-row">
+                  <div class="stars">★★★★★</div>
+                  <span class="review-time">рік тому</span>
+                </div>
+                <p class="review-text">
+                  Весь процес підбору і супроводу оренди квартири був на
+                  найвищому рівні! Скрізь чули виділи нашу квартиру для
+                  перегляду. Організація показів агента команди Михайла — все
+                  чітко, профільно і максимальне попадіння в критерій пошуку!
+                  Дякуємо!
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-btn center-btn--reviews reveal">
+          <a href="#" class="btn-reviews-more">Більше відгуків</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: на мобільних — дві окремі секції; на десктопі — одна сітка (.cta-group) -->
+    <div class="cta-group" id="cta">
+      <section
+        class="cta-section cta-section--media"
+        aria-label="Переваги для власників нерухомості"
+      >
+        <div class="cta-media-inner">
+          <div class="cta-visual reveal">
+            <div class="cta-oval-frame">
+              <img class="cta-oval-img" src="assets/header_image.png" alt="" />
+              <p class="cta-chip cta-chip--tl">
+                <span class="cta-chip-inner"
+                  >Готова база покупців<br />та орендарів</span
+                >
+              </p>
+              <p class="cta-chip cta-chip--bl">
+                <span class="cta-chip-inner"
+                  >Реальна оцінка вартості<br />без завищень</span
+                >
+              </p>
+              <p class="cta-chip cta-chip--tr">
+                <span class="cta-chip-inner"
+                  >Юридичний супровід<br />без додаткових витрат</span
+                >
+              </p>
+              <p class="cta-chip cta-chip--br">
+                <span class="cta-chip-inner"
+                  >Повний супровід від першого<br />дзвінка до угоди</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="cta-section cta-section--text"
+        aria-labelledby="cta-heading"
+      >
+        <div class="cta-text-inner">
+          <div class="cta-copy reveal reveal--delay">
+            <h2 class="cta-heading" id="cta-heading">
+              Ви власник нерухомості? Продавайте або здавайте без зайвих турбот!
+            </h2>
+            <p class="cta-lead">
+              Замість місяців очікувань – готові покупці та ефективний
+              маркетинг. Ми підберемо клієнта, підготуємо рекламу та супроводимо
+              угоду від А до Я.
+            </p>
+            <button
+              type="button"
+              class="btn-footer-cta btn-cta-owner"
+              data-open-feedback-modal
+            >
+              <span>Залишити заявку</span>
+              <span class="btn-footer-cta-icon" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-wrap">
+        <div class="footer-brand reveal">
+          <img
+            class="footer-logo-img"
+            src="assets/logo.svg"
+            alt="UrbanApart"
+            width="200"
+            height="56"
+          />
+        </div>
+        <div class="footer-inner reveal reveal--delay-lg">
+          <div class="footer-col footer-col--info">
+            <div class="footer-body">
+              <a class="footer-link" href="#"
+                >м. Львів, вул. Кульпарківська, 226А</a
+              ><br />
+              <a class="footer-link" href="#"
+                >м. Київ, вул. Новокостянтинівська, 2А</a
+              ><br /><br />
+              Пн–Пт 09:00–18:00<br /><br />
+              Слідкуйте за нами:<br />
+              <a class="footer-link" href="#">Instagram</a> &nbsp;·&nbsp;
+              <a class="footer-link" href="#">Facebook</a><br /><br />
+              Ми активно показуємо роботу
+            </div>
+          </div>
+          <div class="footer-col footer-col--cta">
+            <p class="footer-label">Наш номер телефону м. Львів</p>
+            <a class="footer-link" href="tel:+380671207735"
+              >+38 (067) 120 77 35</a
+            >
+            <p class="footer-label">Наш номер телефону м. Київ</p>
+            <a class="footer-link" href="tel:+380632506845"
+              >+38 (063) 250 68 45</a
+            >
+            <p class="footer-label">Наш e-mail</p>
+            <a class="footer-link" href="mailto:budegoodms@gmail.com"
+              >budegoodms@gmail.com</a
+            >
+            <p class="footer-cta-lead">
+              Потрібна консультація або залишилися запитання?
+            </p>
+            <button
+              type="button"
+              class="btn-footer-cta"
+              data-open-feedback-modal
+            >
+              <span>Залишити заявку</span>
+              <span class="btn-footer-cta-icon" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer-bottom reveal">
+          <span>© 2024 UrbanApart. Усі права захищені.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="feedback-modal"
+      id="feedback-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="feedback-modal-title"
+      hidden
+    >
+      <div class="feedback-modal__backdrop" data-close-feedback-modal></div>
+      <div class="feedback-modal__dialog" role="document">
+        <button
+          type="button"
+          class="feedback-modal__close"
+          aria-label="Закрити форму"
+          data-close-feedback-modal
+        >
+          ×
+        </button>
+        <h3 class="feedback-modal__title" id="feedback-modal-title">
+          Залиште заявку
+        </h3>
+        <p class="feedback-modal__subtitle">
+          Напишіть ваш запит, і ми зв'яжемося з вами найближчим часом.
+        </p>
+        <form class="feedback-form" id="feedback-form" novalidate>
+          <label class="feedback-form__field">
+            <span class="feedback-form__label">Ваше ім'я</span>
+            <input
+              class="feedback-form__control"
+              type="text"
+              name="name"
+              placeholder="Наприклад, Олена"
+              autocomplete="name"
+              required
+            />
+          </label>
+          <label class="feedback-form__field">
+            <span class="feedback-form__label">Телефон</span>
+            <input
+              class="feedback-form__control"
+              type="tel"
+              name="phone"
+              placeholder="+38 (0__) ___ __ __"
+              autocomplete="tel"
+              required
+            />
+          </label>
+          <label class="feedback-form__field">
+            <span class="feedback-form__label">Повідомлення</span>
+            <textarea
+              class="feedback-form__control feedback-form__control--textarea"
+              name="message"
+              rows="3"
+              placeholder="Коротко опишіть ваш запит"
+            ></textarea>
+          </label>
+          <button type="submit" class="btn-footer-cta feedback-form__submit">
+            <span>Надіслати заявку</span>
+            <span class="btn-footer-cta-icon" aria-hidden="true">→</span>
+          </button>
+          <p
+            class="feedback-form__status"
+            id="feedback-status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var reduce =
+          !window.matchMedia ||
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var els = document.querySelectorAll(".reveal");
+        if (!els.length) return;
+        if (reduce || !("IntersectionObserver" in window)) {
+          els.forEach(function (el) {
+            el.classList.add("is-inview");
+          });
+          return;
+        }
+        var obs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-inview");
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "0px 0px -6% 0px", threshold: 0.06 },
+        );
+        els.forEach(function (el) {
+          obs.observe(el);
+        });
+      })();
+
+      (function () {
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        document.querySelectorAll(".property-carousel").forEach(function (c) {
+          var viewport = c.querySelector(".property-carousel__viewport");
+          var prev = c.querySelector(".property-carousel__arrow--prev");
+          var next = c.querySelector(".property-carousel__arrow--next");
+          if (!viewport || !prev || !next) return;
+
+          function stepPx() {
+            var card = viewport.querySelector(".property-card");
+            if (!card) return viewport.clientWidth;
+            var gap = 12;
+            return card.getBoundingClientRect().width + gap;
+          }
+
+          function scrollByDir(dir) {
+            var dx = dir * stepPx();
+            viewport.scrollBy({
+              left: dx,
+              behavior: reduce ? "auto" : "smooth",
+            });
+          }
+
+          prev.addEventListener("click", function () {
+            scrollByDir(-1);
+          });
+          next.addEventListener("click", function () {
+            scrollByDir(1);
+          });
+        });
+      })();
+
+      (function () {
+        var hamburger = document.getElementById("nav-hamburger");
+        var drawer = document.getElementById("nav-drawer");
+        var backdrop = document.getElementById("nav-drawer-backdrop");
+        var closeBtn = document.getElementById("nav-drawer-close");
+        if (!hamburger || !drawer || !backdrop || !closeBtn) return;
+
+        var closingTimer = null;
+
+        function finishClose() {
+          drawer.setAttribute("hidden", "");
+          backdrop.setAttribute("hidden", "");
+          closingTimer = null;
+        }
+
+        function setOpen(open) {
+          hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+          hamburger.classList.toggle("is-open", open);
+          document.body.classList.toggle("nav-drawer-active", open);
+
+          if (open) {
+            if (closingTimer) {
+              clearTimeout(closingTimer);
+              closingTimer = null;
+            }
+            drawer.removeAttribute("hidden");
+            backdrop.removeAttribute("hidden");
+            backdrop.setAttribute("aria-hidden", "false");
+            drawer.setAttribute("aria-hidden", "false");
+            requestAnimationFrame(function () {
+              requestAnimationFrame(function () {
+                drawer.classList.add("is-open");
+                backdrop.classList.add("is-open");
+              });
+            });
+          } else {
+            drawer.classList.remove("is-open");
+            backdrop.classList.remove("is-open");
+            backdrop.setAttribute("aria-hidden", "true");
+            drawer.setAttribute("aria-hidden", "true");
+            closingTimer = setTimeout(finishClose, 360);
+          }
+        }
+
+        function closeDrawer() {
+          if (!document.body.classList.contains("nav-drawer-active")) return;
+          setOpen(false);
+        }
+
+        hamburger.addEventListener("click", function () {
+          var expanded = hamburger.getAttribute("aria-expanded") === "true";
+          setOpen(!expanded);
+        });
+
+        closeBtn.addEventListener("click", closeDrawer);
+        backdrop.addEventListener("click", closeDrawer);
+
+        drawer.querySelectorAll('a[href^="#"]').forEach(function (link) {
+          link.addEventListener("click", function () {
+            closeDrawer();
+          });
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (
+            e.key === "Escape" &&
+            document.body.classList.contains("nav-drawer-active")
+          ) {
+            closeDrawer();
+            hamburger.focus();
+          }
+        });
+      })();
+
+      (function () {
+        var modal = document.getElementById("feedback-modal");
+        if (!modal) return;
+        var openers = document.querySelectorAll("[data-open-feedback-modal]");
+        var closers = modal.querySelectorAll("[data-close-feedback-modal]");
+        var focusTarget = modal.querySelector('input[name="name"]');
+        var lastFocused = null;
+
+        function setOpen(open) {
+          if (open) {
+            lastFocused = document.activeElement;
+            modal.removeAttribute("hidden");
+            document.body.classList.add("feedback-modal-open");
+            requestAnimationFrame(function () {
+              modal.classList.add("is-open");
+              if (focusTarget) focusTarget.focus();
+            });
+          } else {
+            modal.classList.remove("is-open");
+            document.body.classList.remove("feedback-modal-open");
+            setTimeout(function () {
+              modal.setAttribute("hidden", "");
+              if (lastFocused && typeof lastFocused.focus === "function") {
+                lastFocused.focus();
+              }
+            }, 220);
+          }
+        }
+
+        openers.forEach(function (opener) {
+          opener.addEventListener("click", function (e) {
+            e.preventDefault();
+            setOpen(true);
+          });
+        });
+
+        closers.forEach(function (closer) {
+          closer.addEventListener("click", function () {
+            setOpen(false);
+          });
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("is-open")) {
+            setOpen(false);
+          }
+        });
+      })();
+
+      (function () {
+        var form = document.getElementById("feedback-form");
+        var status = document.getElementById("feedback-status");
+        if (!form || !status) return;
+
+        function isPhoneValid(value) {
+          var digits = value.replace(/\D/g, "");
+          return digits.length >= 10;
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          status.classList.remove("is-error", "is-success");
+
+          var nameField = form.elements.name;
+          var phoneField = form.elements.phone;
+
+          if (!nameField.value.trim()) {
+            status.textContent = "Вкажіть, будь ласка, ваше ім'я.";
+            status.classList.add("is-error");
+            nameField.focus();
+            return;
+          }
+
+          if (!isPhoneValid(phoneField.value)) {
+            status.textContent = "Вкажіть коректний номер телефону.";
+            status.classList.add("is-error");
+            phoneField.focus();
+            return;
+          }
+
+          status.textContent =
+            "Дякуємо! Заявку надіслано. Ми зв'яжемося з вами найближчим часом.";
+          status.classList.add("is-success");
+          form.reset();
+        });
+      })();
+    </script>
+  </body>
+</html>
